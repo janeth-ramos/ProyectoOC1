@@ -1,0 +1,30 @@
+{
+  "name": "monte-carlo-mineria",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "remotion:studio": "remotion studio remotion-video/src/index.ts"
+  },
+  "dependencies": {
+    "@ai-sdk/react": "^4.0.184",
+    "@remotion/player": "^4.0.545",
+    "ai": "^7.0.179",
+    "next": "16.4.6",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "remotion": "^4.0.545"
+  },
+  "devDependencies": {
+    "@remotion/cli": "^4.0.545",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.4.6",
+    "typescript": "^5"
+  }
+}
