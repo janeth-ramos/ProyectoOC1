@@ -77,9 +77,9 @@ export function ChatIA() {
 
         {error && (
           <div className="chat-error" role="alert">
-            <strong>No se pudo conectar con el asistente.</strong>
+            <strong>El asistente no está disponible en este momento.</strong>
             <span>
-              Para usar el chat, configura la variable <code>AI_GATEWAY_API_KEY</code> en tu entorno local o despliega en Vercel con AI Gateway habilitado. El resto de la página funciona igual.
+              Puedes seguir usando la ruta, el simulador y la bibliografía. Si eres el administrador, revisa el estado de AI Gateway en Vercel.
             </span>
           </div>
         )}

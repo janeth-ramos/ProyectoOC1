@@ -1,5 +1,8 @@
 # Monte Carlo en la minería
 
+**Demo:** https://monte-carlo-mineria.vercel.app  
+**Repositorio:** https://github.com/janeth-ramos/ProyectoOC1
+
 Plataforma educativa interactiva en español creada por **Janeth Ramos**. La portada es una ruta guiada de siete pasos que empieza en la historia del método y termina en una aplicación minera con simulador en vivo.
 
 ## Qué incluye
@@ -40,9 +43,10 @@ Esto abre la vista previa de Remotion Studio. La animación usa `useCurrentFrame
 
 1. Sube el proyecto a un repositorio de GitHub, GitLab o Bitbucket.
 2. En Vercel, elige **Add New → Project** e importa el repositorio. El framework se detecta como Next.js; no hace falta cambiar ajustes de build.
-3. En **Project Settings → AI Gateway**, activa la integración. Con eso, Vercel inyecta la autenticación OIDC y **no necesitas copiar ninguna clave API** en las variables de entorno.
-4. Opcionalmente añade `AI_GATEWAY_MODEL` si quieres usar otro modelo. Por defecto se usa `google/gemini-2.5-flash`.
-5. Haz clic en **Deploy**. Cada push a la rama principal generará un despliegue automático.
+3. El chat usa **AI Gateway con OIDC** automáticamente en deployments de Vercel; no hace falta copiar ninguna clave API.
+4. Para habilitar las solicitudes, el equipo de Vercel debe tener un **método de pago válido** y créditos de AI Gateway. Si aparece `customer_verification_required`, agrega una tarjeta en la configuración de AI Gateway para desbloquear los créditos gratuitos.
+5. Opcionalmente añade `AI_GATEWAY_MODEL` si quieres usar otro modelo. Por defecto se usa `google/gemini-2.5-flash`.
+6. Haz clic en **Deploy**. Si conectas el repositorio de GitHub en Vercel, cada push a `main` generará un despliegue automático.
 
 Si prefieres usar una clave en lugar de OIDC, añade `AI_GATEWAY_API_KEY` en **Project Settings → Environment Variables** para Production, Preview y Development. Nunca subas esa clave al repositorio.
 
